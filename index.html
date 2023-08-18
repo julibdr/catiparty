@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./estilos.css" rel="stylesheet" type="text/css">
+
+</head>
+<header class="headers">
+    <div class="headers px-3 py-1">
+        <div class="container">
+            <div class="collapse navbar-collapse px-4 d-flex">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <h4>Catia</h4>
+                </a>
+                <ul class="mini nav col-12 col-lg-auto my-2  text-small">
+                    <li>
+                        <a href="#ubi" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Ubicación
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#confirm" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Confirmación
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <h1 id="home">Mis 20</h1>
+    <div class="barbie">
+        <img src="barbie.png" />
+    </div>
+
+    <h3>Viernes 25 de Agosto 21:30hs</h3>
+
+    <div id="ubi">
+        <h3>Pedernera 934, Banfield</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.9460705711963!2d-58.39026452424802!3d-34.7569513056954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2b86146c543%3A0xffa85c5ebeed4821!2sPedernera%20934%2C%20B1832%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1692318722514!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <section id="contacto">
+            <div class="confirmar text-center">
+                <h3>Confirmar asistencia antes del 24 de Agosto</h3>
+            </div>
+            <div id="confirm" class="d-flex justify-content-center">
+
+                <form action='mailto:cpiombo.cv@gmail.com' method="post"
+                    class="px-6 my-5 col-8 col-xl-5 needs-validation" novalidate>
+                    <div class="w-80 mb-3">
+                        <label for="ValidationCustom01" class="agrandar form-label">Nombre</label>
+                        <input type="nombre" class="form-control" name="nombre" id="nombre" placeholder="Catia"
+                            required />
+                    </div>
+                    <div class="w-80 mb-3">
+                        <label for="ValidationCustom01" class="agrandar form-label">Apellido</label>
+                        <input type="Apellido" class="form-control" name="apellido" id="apellido" placeholder="Piombo"
+                           required />
+                    </div>
+                    <label for="ValidationCustom07" class="form-label" required>¿Vas a asistir?</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="venis" id="exampleRadios1" value="si" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Si
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="venis" id="exampleRadios2" value="no">
+          <label class="form-check-label" for="exampleRadios2">
+            No
+          </label>
+        </div>
+                    <button type="submit" class="btn headersb">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="container">
+        <footer>
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#ubi" class="nav-link px-2 text-muted">Ubicación</a></li>
+            <li class="nav-item"><a href="#confirm" class="nav-link px-2 text-muted">Confirmación</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023, BdrDesign</p>
+        </footer>
+      </div>
+
+    <script>
+
+            (function () {
+                'use strict'
+
+                // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Bucle sobre ellos y evitar el envío
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            } else {
+                                alert('DATOS VALIDADOS')
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+
+
+ </script>
+</body>
+
+</html>

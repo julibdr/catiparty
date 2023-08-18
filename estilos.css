@@ -1,0 +1,96 @@
+@import url('https://fonts.cdnfonts.com/css/masculine');
+
+@import url('https://fonts.cdnfonts.com/css/barbie');
+
+body{
+    text-align: center;
+    background-color:white;
+}
+
+.headers{
+    background-color: rgb(236, 13, 151);
+    border-radius: 0%;
+    color: white;
+}
+.headersb{
+    margin-top: 10%;
+    background-color: rgb(236, 13, 151);
+color: white;
+width: 35%;
+}
+.headersb:hover{
+    background-color: rgb(247, 159, 213);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Barbie', sans-serif;
+    margin-top: 4%;
+    font-size: 900%;
+    color:rgb(236, 13, 151);
+}
+h3{
+    font-family: 'Masculine', sans-serif;
+    margin-bottom: 3%;
+           
+}
+h2{
+    text-align: center;
+}
+#ubi{
+    text-align: center;
+}
+
+.confirmar{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+}
+#confirm{
+    width: 100%;
+}
+.barbie{
+    margin-bottom: 5%;
+    text-align: center;
+}
+img{
+width: 20%;
+}
+
+h4{
+    margin-top: 1%;
+    font-size: 400%;
+    font-family: 'Barbie', sans-serif;
+    color:white;
+    margin-bottom: -5%;
+}
+.form-check-label{
+    margin-right: 45% !important; 
+}
+.form-check-input{
+    margin-left: 26% !important;
+}
+.mini{
+    margin-left: 75%;
+    font-size: 120%;
+}
+
+  @media screen and (max-width: 575px) {
+    img{
+        width: 40%;
+        margin-bottom: 10%;
+        }
+    iframe{
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    #confirm{
+        margin-left: -50%;
+        width: 200%;
+    }
+    .mini{
+        margin-left: 40%;
+        font-size: 100%;
+    }
+}
