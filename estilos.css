@@ -76,7 +76,23 @@ h4{
     font-size: 120%;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+ ::after, ::before {
+    box-sizing: border-box !important;
+} 
+
+
   @media screen and (max-width: 575px) {
+      .navbar-toggler {
+        border: none !important;
+      }
+      .navbar-toggler:focus {
+        box-shadow: none !important;
+      }
+
     img{
         width: 40%;
         margin-bottom: 10%;
